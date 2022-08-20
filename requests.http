@@ -1,0 +1,15 @@
+GET http://localhost:3000/actors
+
+###
+GET http://localhost:3000/actors/5
+
+
+###
+POST http://localhost:3000/actors.json
+Content-Type: application/json
+
+{
+  "first_name": "Benedict",
+   "last_name": "Cumberbatch",
+    "known_for": "Sherlock"
+}
