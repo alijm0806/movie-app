@@ -13,3 +13,12 @@ Content-Type: application/json
    "last_name": "Cumberbatch",
     "known_for": "Sherlock"
 }
+
+
+
+
+###
+GET http://localhost:3000/movies
+
+###
+GET http://localhost:3000/movies/3
