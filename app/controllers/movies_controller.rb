@@ -8,4 +8,16 @@ class MoviesController < ApplicationController
     movie = Movie.find_by(id: params[:id])
     render json: movie.as_json
   end
+
+  def create
+    movie = Movie.new(
+      title: params[:title],
+      year: params[:year],
+      plot: params[:plot],
+      director: params[:director],
+      english: params[:english],
+    )
+    movie.save
+    render json: movie.as_json
+  end
 end

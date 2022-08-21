@@ -1,5 +1,6 @@
 GET http://localhost:3000/actors
 
+
 ###
 GET http://localhost:3000/actors/5
 
@@ -23,3 +24,14 @@ GET http://localhost:3000/movies
 ###
 GET http://localhost:3000/movies/3
 
+###
+POST http://localhost:3000/movies.json
+Content-Type: application/json
+
+{
+  "title": "Taken",
+   "year": 2008,
+    "plot": "Bryan Mills (Liam Neeson), a former government operative, is trying to reconnect with his daughter, Kim (Maggie Grace)",
+    "director": "Pierre Morel",
+    "english": true
+}
