@@ -15,7 +15,14 @@ Content-Type: application/json
     "known_for": "Sherlock"
 }
 
+###
+PATCH http://localhost:3000/actors/5.json
+Content-Type: application/json
 
+{
+  "first_name": "Benedict!!!"
+   
+}
 
 
 ###
@@ -25,7 +32,7 @@ GET http://localhost:3000/movies
 GET http://localhost:3000/movies/3
 
 ###
-POST http://localhost:3000/movies.json
+POST http://localhost:3000/movies/2.json
 Content-Type: application/json
 
 {
@@ -34,4 +41,12 @@ Content-Type: application/json
     "plot": "Bryan Mills (Liam Neeson), a former government operative, is trying to reconnect with his daughter, Kim (Maggie Grace)",
     "director": "Pierre Morel",
     "english": true
+}
+
+###
+PATCH http://localhost:3000/movies/2.json
+Content-Type: application/json
+
+{
+  "director": "James Cameron"
 }
