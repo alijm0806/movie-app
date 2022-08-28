@@ -8,13 +8,16 @@ GET http://localhost:3000/actors/5
 
 ###
 POST http://localhost:3000/actors.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NjE3OTcwMTF9.gnD3nvn0YaFGaCViRrOJ-jbEV41clOkHGep30ISe3VU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NjE4MDY4NjB9.yLUDZn2Bdz5dmmVqIDqsmEH71X2FD-aGwK8hvWT2Reg
 Content-Type: application/json
 
 {
-  "first_name": "Benedict",
-   "last_name": "Cumberbatch",
-    "known_for": "Sherlock"
+  "first_name": "Liam",
+   "last_name": "Neeson",
+    "known_for": "movie",
+    "movie_id": 4,
+    "age": 65,
+    "gender": "male"
 }
 
 ###
@@ -36,7 +39,7 @@ GET http://localhost:3000/movies/3
 ###
 POST http://localhost:3000/movies.json
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NjE3OTcwMTF9.gnD3nvn0YaFGaCViRrOJ-jbEV41clOkHGep30ISe3VU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NjE4MDY4NjB9.yLUDZn2Bdz5dmmVqIDqsmEH71X2FD-aGwK8hvWT2Reg
 
 {
   "title": "Taken",

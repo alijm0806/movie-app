@@ -19,6 +19,7 @@ class MoviesController < ApplicationController
       plot: params[:plot],
       director: params[:director],
       english: params[:english],
+
     )
     movie.save
     render json: movie.as_json
