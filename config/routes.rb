@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   patch "movies/:id" => "movies#update"
 
   post "/users" => "users#create"
+  post "/sessions" => "sessions#create"
 end
