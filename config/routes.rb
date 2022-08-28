@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   get "movies/:id" => "movies#show"
   post "movies" => "movies#create"
   patch "movies/:id" => "movies#update"
+
+  post "/users" => "users#create"
 end
