@@ -1,4 +1,7 @@
 class ActorsController < ApplicationController
+  before_action :authenticate_admin, except: [:index, :show]
+  # before_action :authenticate_admin, only: [:create, :update, :destroy]
+
   def index
     actors = Actor.all
     render json: actors.as_json
