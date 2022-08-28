@@ -1,6 +1,6 @@
 class MoviesController < ApplicationController
   before_action :authenticate_admin, except: [:index, :show]
-  # before_action :authenticate_admin, only: [:create, :update, :destroy]
+  # before_action :authenticate_admin, only: [:create, :update]
 
   def index
     movies = Movie.all

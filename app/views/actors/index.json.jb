@@ -1,0 +1,7 @@
+@actors.map do |actor|
+  {
+    id: actor.id,
+    first_name: actor.first_name,
+    movie: actor.movie,
+  }
+end
